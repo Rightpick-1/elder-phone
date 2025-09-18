@@ -1,23 +1,13 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import React from "react";
+import DialerPage from "./dial";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="w-[350px] h-[480px] mx-auto bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-300">
+      <div className="h-full overflow-y-scroll">
+        <DialerPage />
+      </div>
     </div>
   );
 }
