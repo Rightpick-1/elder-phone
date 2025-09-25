@@ -1,4 +1,6 @@
 import React from "react";
+import "./dial.css"; // Import CSS file
+
 import log from "./img/log.png";
 import pad from "./img/pad.png";
 import dials from "./img/dial.png";
@@ -10,69 +12,69 @@ import dl from "./img/dl.png";
 
 const DialerPage = () => {
   return (
-    <div className="min-h-screen flex flex-col justify-between bg-white font-sans">
+    <div className="dialer-container">
       {/* Status Bar */}
-      <div className="flex justify-between px-4 pt-3 text-sm text-black">
+      <div className="status-bar">
         <span>14:30</span>
-        <div className="flex gap-2">
-          <img src="/icons/wifi.png" alt="wifi" className="w-5" />
-          <img src="/icons/battery.png" alt="battery" className="w-5" />
+        <div className="status-icons">
+          <img src="/icons/wifi.png" alt="wifi" className="icon" />
+          <img src="/icons/battery.png" alt="battery" className="icon" />
         </div>
       </div>
 
       {/* Dialer Title */}
-      <h1 className="text-center text-lg font-bold mt-2">Call</h1>
+      <h1 className="dialer-title">Call</h1>
 
       {/* Number Display */}
-      <div className="text-center text-2xl font-bold mt-2 flex justify-center items-center gap-2">
+      <div className="number-display">
         +852
-        <button className="text-gray-500">
-          <img src={dl} alt="delete" className="w-5" />
+        <button className="delete-btn">
+          <img src={dl} alt="delete" className="icon" />
         </button>
       </div>
 
       {/* Dial Pad as Image */}
-      <div className="flex justify-center mt-4">
-        <img src={pad} alt="dialpad" className="w-80" />
+      <div className="dial-pad">
+        <img src={pad} alt="dialpad" className="dial-pad-img" />
       </div>
 
-      {/* Call Button */}
-
-      {/* Speed Dial as Image */}
-      <div className="px-6 mt-4">
-        <h2 className="font-bold text-lg mb-2">Speed Dial</h2>
-        <img src={dials} alt="speed dial" className="w-full" />
+      {/* Speed Dial */}
+      <div className="speed-dial">
+        <h2>Speed Dial</h2>
+        <img src={dials} alt="speed dial" className="full-width-img" />
       </div>
-      <div className="flex gap-7 ml-12">
+
+      {/* Speed Dial Labels */}
+      <div className="speed-dial-labels">
         <h1>Son</h1>
         <h1>Daughter</h1>
         <h1>Doctor</h1>
         <h1>Mary</h1>
       </div>
 
-      {/* Call Log as Image */}
-      <div className="px-6 mt-4">
-        <h2 className="font-bold text-lg mb-2">Call Log</h2>
-        <img src={log} alt="call log" className="w-full" />
+      {/* Call Log */}
+      <div className="call-log">
+        <h2>Call Log</h2>
+        <img src={log} alt="call log" className="full-width-img" />
       </div>
 
       {/* Bottom Navigation */}
-      <div className=" bottom-0 w-full bg-white border-t flex justify-around py-2">
-        <div className="flex flex-col items-center text-gray-500">
-          <img src={hm} alt="home" className="w-6" />
-          <span className="text-xs">Home Page</span>
+      <div className="bottom-nav">
+        <div className="nav-item">
+          <img src={hm} alt="home" className="nav-icon" />
+          <span>Home Page</span>
         </div>
-        <div className="flex flex-col items-center text-orange-500">
-          <img src={cntct} alt="contacts" className="w-6" />
-          <span className="text-xs">Contacts</span>
+        <div className="nav-item active">
+          <img src={cntct} alt="contacts" className="nav-icon" />
+          <span>Contacts</span>
         </div>
-        <div className="flex flex-col items-center text-gray-500">
-          <img src={prof} alt="services" className="w-6" />
-          <span className="text-xs">Services</span>
+        <div className="nav-item">
+          <img src={prof} alt="services" className="nav-icon" />
+          <span>Services</span>
         </div>
-        <div className="flex flex-col items-center text-gray-500">
-          <img src={app} alt="options" className="w-6" />
-          <span className="text-xs">Options</span>
+        <div className="nav-item">
+          <img src={app} alt="options" className="nav-icon" />
+          <span>Options</span>
         </div>
       </div>
     </div>

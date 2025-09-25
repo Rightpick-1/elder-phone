@@ -1,0 +1,182 @@
+/* General Reset */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Header Bar */
+.header-bar {
+  background-color: #1e3a8a;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 16px;
+  font-size: 14px;
+}
+
+.header-icons {
+  display: flex;
+  gap: 8px;
+}
+
+/* Date Section */
+.date-section {
+  background-color: #dbeafe;
+  text-align: center;
+  padding: 8px 0;
+}
+
+.date-section h1 {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0;
+}
+
+/* Main Buttons */
+.main-buttons {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  padding: 16px;
+}
+
+.main-button {
+  color: white;
+  border-radius: 12px;
+  padding: 24px;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  text-align: center;
+  cursor: pointer;
+}
+
+.main-button img {
+  display: block;
+  margin: 0 auto 8px;
+}
+
+.main-button.green {
+  background-color: #55aa68;
+}
+
+.main-button.blue {
+  background-color: #5098d5;
+}
+
+.main-button.orange {
+  background-color: #e79e3c;
+}
+
+.main-button.red {
+  background-color: #d65745;
+}
+
+/* Secondary Menu */
+.secondary-menu {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  padding: 0 16px 16px;
+}
+
+.menu-item {
+  border-radius: 12px;
+  padding: 16px;
+  text-align: center;
+  font-weight: 500;
+}
+
+.menu-item img {
+  display: block;
+  margin: 0 auto 8px;
+}
+
+.light-green {
+  background-color: #b4ddc1;
+}
+
+.light-purple {
+  background-color: #cdb6db;
+}
+
+.light-orange {
+  background-color: #f5d7a7;
+}
+
+.light-blue {
+  background-color: #b5d5ee;
+}
+
+.light-yellow {
+  background-color: #f6e6a8;
+  font-size: 14px;
+}
+
+.light-gray {
+  background-color: #d6dbdb;
+}
+
+/* Applications Section */
+.applications-section {
+  padding: 0 16px 80px;
+}
+
+.applications-section h2 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.apps-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+.app {
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+}
+
+.app img {
+  max-width: 24px;
+  max-height: 24px;
+}
+
+/* Application Colors */
+.green-dark {
+  background-color: #22c55e;
+}
+
+.green-darker {
+  background-color: #15803d;
+}
+
+.blue-light {
+  background-color: #93c5fd;
+}
+
+.gray-light {
+  background-color: #e5e7eb;
+}
+
+.red-light {
+  background-color: #ef4444;
+}
+
+.yellow-light {
+  background-color: #facc15;
+}
+
+.red-dark {
+  background-color: #b91c1c;
+}
+
+.blue-medium {
+  background-color: #60a5fa;
+}

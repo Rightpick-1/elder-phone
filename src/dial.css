@@ -1,0 +1,138 @@
+/* Container */
+.dialer-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: white;
+  font-family: Arial, sans-serif;
+}
+
+/* Status Bar */
+.status-bar {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 16px 0;
+  font-size: 14px;
+  color: black;
+}
+
+.status-icons {
+  display: flex;
+  gap: 8px;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+}
+
+/* Dialer Title */
+.dialer-title {
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 8px;
+}
+
+/* Number Display */
+.number-display {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.delete-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: gray;
+}
+
+/* Dial Pad */
+.dial-pad {
+  display: flex;
+  justify-content: center;
+  margin-top: 16px;
+}
+
+.dial-pad-img {
+  width: 320px;
+  max-width: 90%;
+}
+
+/* Speed Dial Section */
+.speed-dial {
+  padding: 0 24px;
+  margin-top: 16px;
+}
+
+.speed-dial h2 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.full-width-img {
+  width: 100%;
+  display: block;
+}
+
+/* Speed Dial Labels */
+.speed-dial-labels {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 8px;
+}
+
+.speed-dial-labels h1 {
+  font-size: 14px;
+  font-weight: normal;
+}
+
+/* Call Log Section */
+.call-log {
+  padding: 0 24px;
+  margin-top: 16px;
+}
+
+.call-log h2 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+/* Bottom Navigation */
+.bottom-nav {
+  position: sticky;
+  bottom: 0;
+  width: 100%;
+  background-color: white;
+  border-top: 1px solid #ddd;
+  display: flex;
+  justify-content: space-around;
+  padding: 8px 0;
+}
+
+.nav-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 12px;
+  color: #6b7280;
+}
+
+.nav-item.active {
+  color: #f97316;
+}
+
+.nav-icon {
+  width: 24px;
+  height: 24px;
+  margin-bottom: 2px;
+}
