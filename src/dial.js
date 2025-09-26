@@ -1,5 +1,6 @@
 import React from "react";
-import "./dial.css"; // Import CSS file
+import "./dial.css";
+import { useNavigate } from "react-router-dom";
 
 import log from "./img/log.png";
 import pad from "./img/pad.png";
@@ -9,16 +10,17 @@ import cntct from "./img/cntct.png";
 import app from "./img/app.png";
 import prof from "./img/prof.png";
 import dl from "./img/dl.png";
+import wifi from "./img/wifi.png";
 
 const DialerPage = () => {
+  const navigate = useNavigate();
   return (
     <div className="dialer-container">
       {/* Status Bar */}
       <div className="status-bar">
         <span>14:30</span>
-        <div className="status-icons">
-          <img src="/icons/wifi.png" alt="wifi" className="icon" />
-          <img src="/icons/battery.png" alt="battery" className="icon" />
+        <div>
+          <img src={wifi} alt="wifi" className="icon" />
         </div>
       </div>
 
@@ -60,7 +62,7 @@ const DialerPage = () => {
 
       {/* Bottom Navigation */}
       <div className="bottom-nav">
-        <div className="nav-item">
+        <div className="nav-item" onClick={() => navigate("/")}>
           <img src={hm} alt="home" className="nav-icon" />
           <span>Home Page</span>
         </div>
@@ -68,7 +70,7 @@ const DialerPage = () => {
           <img src={cntct} alt="contacts" className="nav-icon" />
           <span>Contacts</span>
         </div>
-        <div className="nav-item">
+        <div className="nav-item" onClick={() => navigate("/services")}>
           <img src={prof} alt="services" className="nav-icon" />
           <span>Services</span>
         </div>

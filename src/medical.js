@@ -1,5 +1,6 @@
 import React from "react";
 import "./medical.css";
+import { useNavigate } from "react-router-dom";
 
 import wifiIcon from "./img/wifi.png";
 
@@ -15,6 +16,7 @@ import healthIcon from "./img/appo.png";
 import optionsIcon from "./img/prof.png";
 
 const MedicalPage = () => {
+  const navigate = useNavigate();
   return (
     <div className="medical-container">
       <div className="status-bar">
@@ -56,11 +58,11 @@ const MedicalPage = () => {
       </div>
 
       <div className="bottom-nav">
-        <div className="nav-item">
+        <div className="nav-item" onClick={() => navigate("/")}>
           <img src={homeIcon} alt="home" className="nav-icon" />
           <span>Home</span>
         </div>
-        <div className="nav-item">
+        <div className="nav-item" onClick={() => navigate("/contacts")}>
           <img src={contactsIcon} alt="contacts" className="nav-icon" />
           <span>Contacts</span>
         </div>

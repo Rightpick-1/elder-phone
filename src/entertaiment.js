@@ -1,5 +1,6 @@
 import React from "react";
 import "./entertainment.css";
+import { useNavigate } from "react-router-dom";
 
 import im1 from "./img/01.png";
 import im2 from "./img/002.png";
@@ -16,6 +17,7 @@ import app from "./img/appo.png";
 import prof from "./img/prof.png";
 
 const EntertainmentPage = () => {
+  const navigate = useNavigate();
   return (
     <div className="entertainment-container">
       {/* Status Bar */}
@@ -71,11 +73,11 @@ const EntertainmentPage = () => {
 
       {/* Bottom Navigation */}
       <div className="bottom-nav">
-        <div className="nav-item">
+        <div className="nav-item" onClick={() => navigate("/")}>
           <img src={im10} alt="home" className="nav-icon" />
           <span>Home Page</span>
         </div>
-        <div className="nav-item">
+        <div className="nav-item" onClick={() => navigate("/contacts")}>
           <img src={cntct} alt="contacts" className="nav-icon" />
           <span>Contacts</span>
         </div>

@@ -18,13 +18,11 @@
 }
 
 .status-icons {
-  display: flex;
-  gap: 8px;
+  width: 80px;
 }
 
 .icon {
-  width: 20px;
-  height: 20px;
+  width: 60px;
 }
 
 /* Dialer Title */
